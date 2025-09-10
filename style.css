@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'roasterregular';
+    src: url('assets/fonts/roaster/Roaster.otf') format('opentype'),
+         url('assets/fonts/roaster/Roaster.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Defining root CSS variables (subject to change) */
+:root {
+    --primary-color: #c49c74;
+    --text-dark: #333333;
+    --text-light: #767268;
+    --extra-light: #f0efef;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+/* Global Box and Padding Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting default body styles (subject to change) (decided to use rem instead of px) */
+.section_container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+
+h1, h2, h3 {
+    font-family: 'roasterregular', sans-serif;
+}
