@@ -146,6 +146,19 @@ nav {
     white-space: nowrap;
 }
 
+.hero_container{
+    display: grid;
+    gap: 2rem;
+}
+
+.hero_container h1{
+    font-size: 4.5rem;
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+    
+}
+
 /* PC Computer Big Window Displays (min-width subject to change) */
 @media (width > 768px) {
     nav {
