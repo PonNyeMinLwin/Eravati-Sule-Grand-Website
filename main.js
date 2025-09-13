@@ -18,3 +18,14 @@ mainNavLinks.addEventListener("click", () => {
     mainNavLinks.classList.remove("open");
     menuBtnIcon.setAttribute("class", "ri-menu-3-line");
 });
+
+// Smooth Scrolling and Scroll Reveal Functions
+const scrollRevealSettings = {
+    distance: "50px",
+    duration: 2000,
+    origin: "bottom",
+};
+
+ScrollReveal().reveal(".hero_container h1", { ...scrollRevealSettings, delay: 200 });
+ScrollReveal().reveal(".hero_passage .hero_content", { ...scrollRevealSettings, delay: 800 });
+ScrollReveal().reveal(".hero_btns", { ...scrollRevealSettings, delay: 2000 });

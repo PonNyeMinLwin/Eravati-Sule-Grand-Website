@@ -9,6 +9,7 @@
 /* Defining root CSS colors used (subject to change) */
 :root {
     --primary-color: #c49c74;
+    --secondary-color: #f1dfa6;
     --text-dark: #0a2240;
     --text-light: #767268;
     --extra-light: #f0efef;
@@ -27,7 +28,7 @@
 .section_container {
     max-width: var(--max-width);
     margin: auto;
-    padding: 5rem 1rem;
+    padding: 9rem 1rem;
 }
 
 .section_header {
@@ -59,7 +60,7 @@
     cursor: pointer;
 }
 
-.btn:hover { background-color: var(--white); }
+.btn:hover { background-color: var(--extra-light); }
 
 img {
     display: flex;
@@ -103,7 +104,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem; 
     width: 100%;
     background-color: var(--primary-color);
 }
@@ -146,18 +147,65 @@ nav {
     white-space: nowrap;
 }
 
-.hero_container{
+/* Whole Header Container */
+.hero_container {
     display: grid;
     gap: 2rem;
+    padding-top: 19rem;
 }
 
-.hero_container h1{
+/* Main Title (Hero line) */
+.hero_container h1 {
     font-size: 4.5rem;
     font-weight: 500;
-    color: var(--white);
+    color: var(--secondary-color);
     text-align: center;
-    
 }
+
+/* Passage under main hero line */
+.hero_passage .hero_content {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+/* Hero Buttons Container Settings */
+.hero_btns {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_btns .btn {
+    border: 2px solid var(--white);
+    padding: calc(0.75rem - 4px) calc(1.5rem - 4px);
+}
+
+.hero_btns .btn:nth-child(1) {
+    background-color: var(--white);
+    color: var(--text-dark);
+}
+
+.hero_btns .btn:nth-child(2) { background-color: transparent; }
+
+.hero_btns .btn:nth-child(2):hover {
+    background-color: var(--white);
+    color: var(--text-dark);
+}
+
+/* Room Section Styles (default) */
+a {
+    font-family: 'roasterregular', sans-serif;
+    color: var(--text-dark)
+}
+
+.rooms_container { 
+    padding-top: 2rem; 
+    max-width: var(--max-width);
+    margin: auto;
+}
+
 
 /* PC Computer Big Window Displays (min-width subject to change) */
 @media (width > 768px) {
@@ -203,6 +251,30 @@ nav {
     .main_nav_links a { color: var(--white); }
 
     .main_nav_links a:hover { color: var(--primary-color); }
+
+    /* Changing Hero Container Layout (subject to change according to text) */
+    .section_container { padding: 14rem 1rem; }
+
+    .rooms_container { padding-top: 2rem; }
+
+    .hero_container { grid-template-columns: 3fr 2fr; }
+
+    .hero_container h1 {
+        font-size: 5.5rem;
+        text-align: center;
+        line-height: 6.5rem;
+    }
+
+    .hero_passage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .hero_passage .hero_content { text-align: left; }
+
+    .hero_btns { justify-content: flex-start; }
 }
 
 

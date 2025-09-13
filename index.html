@@ -13,49 +13,159 @@
     <!-- Tab Header -->
     <title>The Eravati Sule Grand Yangon</title> 
 </head>
-<body>
-    <header>
-        <!-- Main Navigation Bar -->
-        <nav>
-            <div class="main_nav_header">
-                <!-- Logo -->
-                <div class="ervt_nav_logo">
-                    <a href="#">
-                        <img src="assets/logos/jpgs/ervt-blue-logo.jpg" alt="Eravati Sule Grand Logo" class="logo-mobile">
-                        <img src="assets/logos/jpgs/ervt-white-logo.jpg" alt="Eravati Sule Grand Logo White" class="logo-desktop">
-                    </a>
+    <body>
+        <header>
+            <!-- Main Navigation Bar -->
+            <nav>
+                <div class="main_nav_header">
+                    <!-- Logo -->
+                    <div class="ervt_nav_logo">
+                        <a href="#">
+                            <img src="assets/logos/jpgs/ervt-blue-logo.jpg" alt="Eravati Sule Grand Logo" class="logo-mobile">
+                            <img src="assets/logos/jpgs/ervt-white-logo.jpg" alt="Eravati Sule Grand Logo White" class="logo-desktop">
+                        </a>
+                    </div>
+                    <div class="nav_menu_btn" id="menu-btns"><i class="ri-menu-3-line"></i></div>
                 </div>
-                <div class="nav_menu_btn" id="menu-btns"><i class="ri-menu-3-line"></i></div>
-            </div>
-            <ul class="main_nav_links" id="nav_links">
-                <li a href="#"><a href="#">Home</a></li>
-                <li a href="#"><a href="#">Rooms</a></li>
-                <li a href="#"><a href="#">Facilities</a></li>
-                <li a href="#"><a href="#">Gallery</a></li>
-                <li a href="#"><a href="#">Contact</a></li>
-                <!-- <li a href="#"><a href="#">Promotions</a></li> -->
-                <!-- <li a href="#"><a href="#">About</a></li> -->
-            </ul>
-        </nav>
+                <ul class="main_nav_links" id="nav_links">
+                    <li a href="#"><a href="#">Home</a></li>
+                    <li a href="#rooms"><a href="#">Rooms</a></li>
+                    <li a href="#facilities"><a href="#">Facilities</a></li>
+                    <li a href="#gallery"><a href="#">Gallery</a></li>
+                    <li a href="#contact"><a href="#">Contact</a></li>
+                    <!-- <li a href="#"><a href="#">Promotions</a></li> -->
+                    <!-- <li a href="#"><a href="#">About</a></li> -->
+                </ul>
+            </nav>
 
-        <div class="section_container hero_container" id="home">
-            <h1>Welcome to The Eravati.</h1>
-            <div class="hero_passage">
-                <p class="hero_content">
-                    Nestled just moments from the iconic golden spire of Sule Pagoda, step through the carved gates of The Eravati
-                    and into a story written in stone and sunlight. Once the city's distinguised law courts, this heritage landmark 
-                    - with its soraing colonnades and hallways that echo with history - has been lovingly transformed into a 
-                    five-star sanctuary that honours Yangon's colonial-era grandeour while offering every modern luxury.
-                </p>
-                <div class="hero_btns">
-                    <button class="btn">Discover The Eravati</button>
-                    <button class="btn btn-secondary">Explore Suites & Rooms</button>
+            <div class="section_container hero_container" id="home">
+                <h1>Welcome to The Eravati.</h1>
+                <div class="hero_passage">
+                    <p class="hero_content">
+                        Nestled just moments from the iconic golden spire of Sule Pagoda, step through the carved gates of The Eravati
+                        and into a story written in stone and sunlight. Once the city's distinguised law courts, this heritage landmark 
+                        - with its soraing colonnades and hallways that echo with history - has been lovingly transformed into a 
+                        five-star sanctuary that honours Yangon's colonial-era grandeour while offering every modern luxury.
+                    </p>
+                    <div class="hero_btns">
+                        <button class="btn">Discover The Eravati</button>
+                        <button class="btn btn-secondary">Explore Suites & Rooms</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- JavaScripts (and other scripts) for functionalities -->
-    <script src="main.js"></script>
-</body> 
+        <!-- Rooms Section -->
+        <section class="rooms" id="rooms">
+            <div class="section_container rooms_container">
+                <!-- Section Header Title -->
+                <h2 class="section_header">Your Living Chambers</h2>
+                <!-- All Rooms Grid -->
+                <div class="rooms_grid">
+                    <!-- Grand Executive Room Card -->
+                    <div class="rooms_card">
+                        <!-- Room Image and Guest Counter -->
+                        <div class="rooms_image">
+                            <div class="guest_counter"><span><i class="ri-group-3-fill"></i></span></div>
+                            <a href="#grand_executive_room"><img src="assets/images/rooms/grand-executive-room/ge2.jpg" alt="Grand Executive Room Image" /></a>
+                        </div>
+                        <!-- Room Title and Details -->
+                        <div class="room_content">
+                            <a href="#grand_executive_room"><h2>Grand Executive Room</h2>
+                                <p>Experience the epitome of comfort and style in our Grand Executive Room, 
+                                    a serene retreat for both business and leisure travelers to...
+                                </p>
+                            </a>
+                        </div>
+                        <!-- Room View Details Button -->
+                        <div class="room_btns"><button class="btn"><a href="#grand_executive_room">View Details</a></button></div>
+                    </div>
+                    <!-- Grand Heritage Room Card -->
+                    <div class="rooms_card">
+                        <!-- Room Image and Guest Counter -->
+                        <div class="rooms_image">
+                            <div class="guest_counter"><span><i class="ri-group-3-fill"></i></span></div>
+                            <a href="#grand_heritage_room"><img src="assets/images/rooms/grand-heritage-room/gh4.jpg" alt="Grand Heritage Room Image" /></a>
+                        </div>
+                        <!-- Room Title and Details -->
+                        <div class="room_content">
+                            <a href="#grand_heritage_room"><h2>Grand Heritage Room</h2>
+                                <p>Experience the epitome of comfort and style in our Grand Heritage Room, 
+                                    a serene retreat for both business and leisure travelers to...
+                                </p>
+                            </a>
+                        </div>
+                        <!-- Room View Details Button -->
+                        <div class="room_btns"><button class="btn"><a href="#grand_heritage_room">View Details</a></button></div>
+                    </div>
+                    <!-- Executive Suite Room Card -->
+                    <div class="rooms_card">
+                        <!-- Room Image and Guest Counter -->
+                        <div class="rooms_image">
+                            <div class="guest_counter"><span><i class="ri-team-fill"></i></span></div>
+                            <a href="#executive_suite_room"><img src="assets/images/rooms/executive-suite/es2.jpg" alt="Executive Suite Room Image" /></a>
+                        </div>
+                        <!-- Room Title and Details -->
+                        <div class="room_content">
+                            <a href="#executive_suite_room"><h2>Executive Suite</h2>
+                                <p>Experience the epitome of comfort and style in our Executive Suite, 
+                                    a serene retreat for both business and leisure travelers to...
+                                </p>
+                            </a>
+                        </div>
+                        <!-- Room View Details Button -->
+                        <div class="room_btns"><button class="btn"><a href="#executive_suite_room">View Details</a></button></div>
+                    </div>
+                    <!-- Manor Suite Room Card -->
+                    <div class="rooms_card">
+                        <!-- Room Image and Guest Counter -->
+                        <div class="rooms_image">
+                            <div class="guest_counter">
+                                <span><i class="ri-group-3-fill"></i></span>
+                                <span><i class="ri-group-3-fill"></i></span>
+                            </div>
+                            <a href="#manor_suite_room"><img src="assets/images/rooms/manor-suite/ms4.jpg" alt="Manor Suite Room Image" /></a>
+                        </div>
+                        <!-- Room Title and Details -->
+                        <div class="room_content">
+                            <a href="#manor_suite_room"><h2>Manor Suite</h2>
+                                <p>Experience the epitome of comfort and style in our Manor Suite, 
+                                    a serene retreat for both business and leisure travelers to...
+                                </p>
+                            </a>
+                        </div>
+                        <!-- Room View Details Button -->
+                        <div class="room_btns"><button class="btn"><a href="#manor_suite_room">View Details</a></button></div>
+                    </div>
+                    <!-- Eravati Suite Room Card -->
+                    <div class="rooms_card">
+                        <!-- Room Image and Guest Counter -->
+                        <div class="rooms_image">
+                            <div class="guest_counter">
+                                <span><i class="ri-group-3-fill"></i></span>
+                                <span><i class="ri-group-3-fill"></i></span>
+                                <span><i class="ri-group-3-fill"></i></span>
+                            </div>
+                            <a href="#eravati_suite_room"><img src="assets/images/rooms/eravati-suite/ers1.jpg" alt="Eravati Suite Room Image" /></a>
+                        </div>
+                        <!-- Room Title and Details -->
+                        <div class="room_content">
+                            <a href="#eravati_suite_room"><h2>Eravati Suite</h2>
+                                <p>Experience the epitome of comfort and style in our Eravati Suite, 
+                                    a serene retreat for both business and leisure travelers to...
+                                </p>
+                            </a>
+                        </div>
+                        <!-- Room View Details Button -->
+                        <div class="room_btns"><button class="btn"><a href="#eravati_suite_room">View Details</a></button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Scroll Reveal Functionality Script-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- JavaScripts (and other scripts) for functionalities -->
+        <script src="main.js"></script>
+    </body> 
 </html>
